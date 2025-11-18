@@ -1,0 +1,371 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: #0f172a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Updated Hero Section (Internship Focused) */
+.hero-new {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  padding: 6rem 2rem;
+}
+
+.hero-new .hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-new .hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-new .hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.hero-new .hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-new .btn {
+  padding: 0.8rem 1.5rem;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-new .btn:hover {
+  background: #22caff;
+  color: #0f172a;
+}
+
+/* Stats Cards in Hero */
+.hero-new .hero-stats {
+  display: flex;
+  gap: 2rem;
+  flex: 1 1 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hero-new .stat {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.hero-new .stat:hover {
+  transform: translateY(-5px);
+}
+
+.hero-new .stat h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.hero-new .stat p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* About Section */
+.about {
+  padding: 5rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #0f172a;
+}
+
+/* Section Titles */
+h2.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0f172a;
+  font-size: 2rem;
+  position: relative;
+}
+
+h2.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #38bdf8;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero-new .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-new .hero-stats {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+/* About Section Enhanced Styling */
+.about {
+  padding: 5rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-card {
+  background: #f0f9ff; /* light accent background */
+  border-left: 6px solid #38bdf8; /* colored accent bar */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  line-height: 1.7;
+  color: #0f172a;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.about-card strong {
+  color: #0d9488; /* subtle emphasis color */
+}
+
+/* Hover effect for card */
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Title */
+h2.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0f172a;
+  font-size: 2rem;
+  position: relative;
+}
+
+h2.section-title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #38bdf8;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .about-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.project-card h3 {
+  margin-bottom: 0.8rem;
+  color: #0f172a;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #38bdf8;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.project-card a:hover {
+  color: #0d9488;
+  transform: translateY(-2px);
+}
+
+/* Hover effect on project cards */
+.project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Optional: Add tech tags inside project card */
+.project-card .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project-card .tech-tags span {
+  background: #e0f2fe;
+  color: #0d9488;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+.contact p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: #38bdf8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #0f172a;
+  color: white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .skills-container, .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
